@@ -1,0 +1,7 @@
+.instructionDiv{
+    margin: 5px;
+    border-radius: 10px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    box-shadow: grey -1px -1px 3px 3px;
+}

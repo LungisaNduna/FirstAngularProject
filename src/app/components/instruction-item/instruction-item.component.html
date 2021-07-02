@@ -1,0 +1,30 @@
+<div class='col-md-5 instructionDiv'>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-1">
+            <h1>{{ instruction.instructionId }}</h1>
+        </div>
+        <div class="col-3">
+            <div class="row">
+                <div class="col-12"><label>Trade Date</label></div>
+                <div class="col-12"><label>{{ instruction.tradeDate | date: "yyyy/MM/dd" }}</label></div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="row">
+                <div class="col-12"><label>Settlement Date</label></div>
+                <div class="col-12"><label>{{ instruction.settlementDate | date: "yyyy/MM/dd HH:mm:ss" }}</label></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="col-12"><label>{{ instruction.buySell | buySell }}</label></div>
+        </div>    
+
+        <div class="col-2">
+            <div class="row">
+                <div class="col-12"><label>Deal Price</label></div>
+                <div class="col-12"><label>{{ instruction.dealPrice | currency: "R" }}</label></div>    
+            </div>
+        </div>
+    </div>
+</div>

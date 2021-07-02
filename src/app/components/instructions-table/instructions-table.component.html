@@ -1,0 +1,15 @@
+<table class="table table-hover">
+
+  <tbody>
+      <tr *ngFor="let instruct of instructions">
+          <td>{{ instruct.instructionId }}</td>
+          <td>{{ instruct.buySell }}</td>
+          <td>{{ instruct.tradeDate }}</td>
+          <td>{{ instruct.settlementDate }}</td>
+          <td>{{ instruct.nominal | currency:'R' }}</td>
+          <td>{{ instruct.dealPrice | currency:'R' }}</td>
+          <td>{{ instruct.consideration | currency:'R' }}</td>
+          <td>{{ instruct.instrumentId }}</td>
+      </tr>
+  </tbody>
+</table> 
